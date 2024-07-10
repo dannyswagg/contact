@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+  width: 40%;
+}
+#scard {
+  display: none;
+}
+.scard {
+  color: hsl(0, 0%, 100%);
+  width: 40%;
+  margin: 20px auto;
+  background-color: hsl(171, 82%, 13%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.scard h2 {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+.scard p {
+  font-size: 0.7rem;
+  padding: 5px 0;
+}
+.icon {
+  width: 20px;
+}
+.layout {
+  display: flex;
+}
+.header-text {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  column-gap: 20px;
+}
+.email-input {
+  margin-bottom: 15px;
+}
+.asterik {
+  color: hsl(169, 82%, 27%);
+}
+.input {
+  width: 100%;
+  height: 35px;
+  border-radius: 7px;
+  padding: 0 0.5rem;
+  border: 1px solid hsl(186, 15%, 59%);
+  outline: none;
+  font-size: 0.9rem;
+}
+.input-group {
+  width: 100%;
+}
+input:focus {
+  border-color: hsl(169, 82%, 27%);
+}
+input:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+textarea:focus {
+  border-color: hsl(169, 82%, 27%);
+}
+textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+}
+.textarea {
+  padding: 0.5rem;
+  height: 80px;
+}
+textarea {
+  resize: none;
+}
+.btn {
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: hsl(169, 82%, 27%);
+}
+
+.btn:hover {
+  background: hsl(171, 79%, 13%);
+}
+.checkbox-wrapper-46 {
+  margin-top: 1rem;
+}
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: hsl(169, 82%, 27%);
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 8px;
+}
+
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: hsl(169, 82%, 27%);
+  border-color: hsl(169, 82%, 27%);
+  animation: wave-46 0.4s ease;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.radio-group {
+  display: flex;
+  column-gap: 20px;
+}
+
+.radio-label {
+  width: 100%;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #fff;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 7px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-input:checked + .radio-label {
+  background-color: hsl(148, 38%, 91%);
+  border-color: hsl(169, 82%, 27%);
+}
+
+.radio-input:focus + .radio-label {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.radio-inner-circle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.radio-label:hover .radio-inner-circle {
+  border-color: #555;
+}
+
+.radio-input:checked + .radio-label .radio-inner-circle {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.radio-input:checked + .radio-label .radio-inner-circle::after {
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(169, 82%, 27%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-border {
+  border: 1px solid hsl(0, 66%, 54%);
+}
+.error-text {
+  display: none;
+  padding: 5px 0;
+  font-size: 0.7rem;
+  color: hsl(0, 66%, 54%);
+}
+
+/* All media queries */
+@media screen and (max-width: 600px) {
+  .form-group {
+    display: block;
+  }
+  .card {
+    width: 85%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    margin: 10% auto;
+  }
+  .scard {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 2;
+  }
+  .radio-group {
+    display: block;
+  }
+  .textarea {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 35%;
+  }
+}
